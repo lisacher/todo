@@ -17,6 +17,16 @@ html,body{
     background-color: #fff;
     color: #000;
   }
+  @media (max-width: 425px){
+    .btn{
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: 768px){
+    .btn{
+      margin-top: 10px;
+    }
+  }
   .checked {
     color: #e3c2d5;
     text-decoration: line-through;
