@@ -5,7 +5,7 @@ const input = document.querySelector('#newTodo')
 const done = document.querySelector('#my-done')
 
 // 原始就有的ＴＯＤＯ資料
-const todos = ['上健身房', '每日讀好書', '喝水2500ml', '跑步', '學習']
+const todos = ['上健身房', '每日讀好書', '喝水2500ml', '插花', '上課']
 for (let todo of todos) {
   addItem(todo)
 }
