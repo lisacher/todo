@@ -60,6 +60,7 @@ list.addEventListener('click',function(event){
   }
   else if ( target.tagName === 'LABEL'){
     target.classList.toggle('checked')
+    done.append(target.parentElement)
   }
 })
 
