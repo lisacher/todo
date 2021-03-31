@@ -19,7 +19,11 @@ html,body{
   }
   @media (max-width: 425px){
     .btn{
-      margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    width: 50px;
+    font-size: 15px;
+    padding: 6px;
     }
   }
   @media (max-width: 768px){
@@ -69,5 +73,5 @@ html,body{
     cursor:pointer;
   }
   .form-control{
-    width: auto;
+    width: 200px;
   }
