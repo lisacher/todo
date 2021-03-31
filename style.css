@@ -39,6 +39,7 @@ html,body{
   
   .fa {
     margin: 0 5px;
+	font-size: large;
     color: #bbb;
   }
   .container{
