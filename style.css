@@ -68,3 +68,6 @@ html,body{
   .delete:hover{
     cursor:pointer;
   }
+  .form-control{
+    width: auto;
+  }

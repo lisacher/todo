@@ -5,7 +5,6 @@ const input = document.querySelector('#newTodo')
 const done = document.querySelector('#my-done')
 //新增一個新的陣列，使用 getItem() 方法從 localStorage 取出資料，並透過 JSON.parse() 方法將資料轉換成原本的格式
 const todoList = JSON.parse(localStorage.getItem('todoList')) || []
-// const doneList = JSON.parse(localStorage.getItem('doneList')) || []
 
 // 原始就有的ＴＯＤＯ資料
 const todos = ['上健身房', '每日讀好書', '喝水2500ml', '健康飲食', '認真賺錢']
@@ -57,11 +56,10 @@ list.addEventListener('click',function(event){
     let parentElement = target.parentElement
     parentElement.remove()
     todoList.splice(todoList.indexOf(parentElement.textContent.slice(0, -1)), 1)
-    updateLocalStorage()
+    updateTodoList()
   }
   else if ( target.tagName === 'LABEL'){
     target.classList.toggle('checked')
-    done.append(target.parentElement)
   }
 })
 
@@ -83,13 +81,8 @@ function displayTodoList() {
   todoList.forEach(todo => addItem (todo))
 }
 
-function updateTodoList() {
-  //store the list back to localStorage
+function updateTodoList (){
   localStorage.setItem('todoList', JSON.stringify(todoList))
-}
-
-function updateDoneList (){
-  localStorage.setItem('doneList', JSON.stringify(doneList))
 }
 
 displayTodoList()
