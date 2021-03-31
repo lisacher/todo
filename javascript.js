@@ -83,7 +83,7 @@ function displayTodoList() {
   todoList.forEach(todo => addItem (todo))
 }
 
-function updateLocalStorage() {
+function updateTodoList() {
   //store the list back to localStorage
   localStorage.setItem('todoList', JSON.stringify(todoList))
 }
